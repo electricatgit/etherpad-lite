@@ -37,6 +37,8 @@ test.describe('Messages in the COLLABROOM', function () {
     };
 
     test('bug #4978 regression test', async function ({browser}) {
+        console.log("testing34567894 start");
+        console.log("testing34567894 " + padId);
         // The bug was triggered by receiving a change from another user while simultaneously composing
         // a character and waiting for an acknowledgement of a previously sent change.
 
@@ -90,5 +92,6 @@ test.describe('Messages in the COLLABROOM', function () {
         for (let i=0;i<expectedLines.length;i++){
             expect(await body2.locator('div').nth(i).textContent()).toBe(expectedLines[i]);
         }
+        console.log("testing34567894 start");
     });
 });
